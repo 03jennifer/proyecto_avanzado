@@ -1,0 +1,317 @@
+@media (max-width: 480px) {
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+.line_red{
+  display: none;
+}
+.about article{
+  width: 350px;
+  height: auto;
+
+
+}
+.what{
+  width: 100%;
+   display: grid;
+   grid-template-columns: 1fr;
+   padding-top:40px ;
+   word-wrap: break-word; /* Rompe la palabra larga */
+  overflow-wrap: break-word;
+  
+ }
+ .what article{
+   display: flex;
+   flex-direction: column;
+ width: 300px;
+  overflow: hidden;
+  margin: auto;
+ }
+#carousel2 {
+  max-width: 100%;
+
+}
+
+.caro2 {
+  min-width: 100%;
+
+
+}
+.caro2 img{
+  min-width: 100%;
+
+
+}
+.NavCarrusel2 {
+  display: none;
+
+}
+.galeria{
+  width: 350px;
+display: flex;
+flex-direction: column;
+
+}
+
+.fondomodal {
+  left: 0%;
+  transition: all 0.5s;
+
+}
+.contenidomodal {
+  align-items: center;
+  max-width: 370px;
+ 
+}
+.about{
+  border: 1px solid #00000000;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}
+.about img{
+  text-align: center;
+  width: 100%;
+  object-fit: cover;
+
+
+}
+
+#instalacion{
+  padding-top: 20px;
+  width: 90%;
+
+}
+
+  .opciones h1{
+    display: none;
+  }
+  .menu .submenu {
+    width:100%;
+    padding: 10px;
+    
+ }
+ .caro{
+  min-width: 50%;
+ }
+ .opciones{
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.tit{
+  margin: auto;
+  display: block;
+  text-align: center;
+  
+}
+
+
+    .about{
+      font-family: "Barlow Condensed", sans-serif;
+      flex-direction: column;
+      justify-content: center;
+    
+    }
+    .head{
+      display: none;
+    }
+    #btn-gat{
+  
+      display: none;
+    }
+  
+
+    
+  #iconmen
+  {
+    font-family: 'roboto', sans-serif;
+    text-decoration: none;
+    background-color: #E12454;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    padding: 20px 30px;
+    word-spacing:200px;
+
+  }
+    nav {
+      width:400px;
+      flex-direction: column;
+      text-align: left;
+    }
+  nav#cja{
+    display: none;
+  }
+  .menu-item{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px;
+  }
+.menu{
+  padding-bottom: 10px;
+}
+ 
+    nav a {
+      padding: 12px;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+    }
+  
+    .slide {
+        height: 250px;
+      }
+      .slide img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      }
+  
+    h5 {
+        font-size: 30px;
+        width: 100%; 
+        left: 0;
+        top: -30vh;
+        text-align: center; 
+        padding: 10px;
+    
+    }
+  
+  
+
+  
+  .slide-content {
+    width: 80%;
+}
+.btns {
+ width: 100%;
+}
+.btns a{
+  margin: auto;
+  padding:5px 15px; 
+}
+#blanco{
+  padding: 5px 15px; 
+}
+.azul{
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contact-section {
+  font-family: "Barlow Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form{
+  width: 90%;
+}
+#Ou{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.part2{
+  width: 100%;
+
+}
+
+.contenedor1, .contenedor2{
+margin: auto;
+width: 60%;
+
+}
+.part2 img{
+  width: 350px;
+  height: 400px;
+  text-align: center;
+}
+}
+
+
+  @media (max-width: 1024px) {
+  
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo img {
+      width: 150px;
+      padding: 10px;
+    }
+  #iconmen
+  {
+    text-decoration: none;
+    background-color: #E12454;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    padding: 10px;
+  }
+    nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  nav#cja{
+    display: none;
+  }
+    nav a {
+       
+      padding: 10px;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+    }
+  
+    .slide {
+        height: 350px;
+      }
+      .slide img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      }
+  
+    h5 {
+        font-size: 30px;
+        width: 100%; 
+        left: 0;
+        top: -30vh;
+        text-align: center; 
+        padding: 10px;
+    
+    }
+  
+    .servicios {
+      flex-direction: column;
+      padding: 20px;
+      gap: 20px;
+    }
+  
+    .servicios article {
+      width: 100%;
+    }
+  
+    footer {
+      text-align: center;
+      padding: 10px;
+    }
+  
+    footer img {
+      width: 150px;
+    }
+  }

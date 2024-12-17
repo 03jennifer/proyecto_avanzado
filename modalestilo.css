@@ -1,0 +1,135 @@
+
+  
+  .contenedor{
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+.contenedor section{
+    max-width: 50%;
+  }
+.contactos{
+    display: flex;
+
+}
+
+.contactos article{
+    padding: 10px;
+}
+
+
+#modal {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#modal.mostrar {
+  display: block;
+  opacity: 1;
+}
+
+
+.contactos article{
+    border: 1px solid #00000000;
+    text-align: center;
+    align-items: center;
+}
+
+.fondomodal {
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  left: 50%;
+  top: 200px;
+  transition: all 0.5s;
+  padding: 10px;
+}
+.contenidomodal {
+
+  max-width: 800px;
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  overflow: auto;
+}
+.modal{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.alineacion_cerrar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .mostrar {
+    display: flex;
+    
+  }
+  .cerrarmodal {
+    cursor: pointer;
+    color: red;
+    font-size: 26px;
+    transition: all 0.5s;
+  }
+  .cerrarmodal:hover {
+    color: black;
+  }
+
+  .contenidomodal {
+    background-color: #fff;
+    padding: 15px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contenidomodal input,
+.contenidomodal textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.alineacion_cerrar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .mostrar {
+    display: flex;
+  }
+  .cerrarmodal {
+    cursor: pointer;
+    color: red;
+    font-size: 26px;
+    transition: all 0.5s;
+  }
+  .cerrarmodal:hover {
+    color: black;
+  }
+
+
+  @media screen and (max-width: 414px) {
+
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenidomodal {
+      width: 95%;
+      padding: 10px;
+    }
+    .cerrarmodal {
+      right: 20px;
+    }
+  }
+

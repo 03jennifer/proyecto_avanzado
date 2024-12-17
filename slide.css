@@ -1,0 +1,107 @@
+
+.slide {
+    position: relative; 
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden; 
+   
+}
+
+
+.slide-img {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute; /* Asegura que las imágenes estén alineadas dentro del contenedor */
+    width: calc(100% * 3);
+    height: 120%; 
+    transition: transform 0.5s ease-in-out; 
+ 
+}
+.slide-img figure {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #E12454;
+    object-fit: cover;
+
+}
+
+/* Imágenes dentro del slider */
+.slide-img img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    padding: 0;
+}
+
+/* Contenido dentro del slider (texto y botones) */
+.slide-content {
+  
+    width: 70%;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+   left: 50%;
+ transform: translate(-50%, -50%);
+   text-align: center;
+    color: white;
+}
+
+
+  
+/* Controles de navegación */
+.control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 3;
+    padding: 20px;
+    background-color: #E12454;
+    border-radius: 10px;
+  
+}
+
+.control.prev {
+    left: 20px;
+}
+
+.control.next {
+    right: 20px;
+}
+h6{
+    font-family: "Barlow Condensed", sans-serif;
+}
+.slide-content p{
+    font-family: var(--letra);
+}
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 80px;
+    width: 40px;
+    height: 40px;
+    background-color: #333333b6;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: #555555a8;
+    color: #fff;
+}

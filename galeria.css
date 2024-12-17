@@ -1,0 +1,42 @@
+.footer-gallery {
+    margin-top: 20px;
+    text-align: left;  
+  }
+  
+.footer-gallery h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+section .gallery-images {
+    display: flex;
+    justify-content: center;  
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  
+section .gallery-images a {
+    width: 100px;  
+    height: 100px;
+  }
+  
+section .gallery-images a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+ section .gallery-images a, img {
+    width: 200px;
+    height: 200px;
+
+  }
+  
+section .gallery-images a img:hover {
+    transform: scale(1.05);  
+  }
+  
